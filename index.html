@@ -1,4 +1,26 @@
 <!doctype html>
+
+
+<script type="text/javascript">
+    function loadEvents() {
+        var mailString;
+        function updateMailString() {
+            mailString = '?subject=' + encodeURIComponent($('#subject').val())
+                + '&body=' + encodeURIComponent($('#message').val());
+            $('#mail-link').attr('href',  'mailto:person@email.com' + mailString);
+        }
+        $( "#subject" ).focusout(function() { updateMailString(); });
+        $( "#message" ).focusout(function() { updateMailString(); });
+        updateMailString();
+    }
+</script>
+
+<p><input id="subject" type="text" placeholder="type your subject here" 
+    class="form-control"></p>
+<p><input id="message" type="text" placeholder="type your message here" 
+    class="form-control"></p>
+<p><a id="mail-link" class="btn btn-primary">Create email</a></p>
+
 <img src="https://github.com/watstyl08/watstyl08.github.io/blob/master/Coupon%20Interstitial%20Mock-up%20Landing%20-%20email.jpg?raw=true">
 
 
