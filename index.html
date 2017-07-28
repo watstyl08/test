@@ -1,20 +1,5 @@
 <!doctype html>
 
-
-<script type="text/javascript">
-    function loadEvents() {
-        var mailString;
-        function updateMailString() {
-            mailString = '?subject=' + encodeURIComponent($('#subject').val())
-                + '&body=' + encodeURIComponent($('#message').val());
-            $('#mail-link').attr('href',  'mailto:person@email.com' + mailString);
-        }
-        $( "#subject" ).focusout(function() { updateMailString(); });
-        $( "#message" ).focusout(function() { updateMailString(); });
-        updateMailString();
-    }
-</script>
-
 <a href="mailto:?&subject=Ruffles $1 Off Redemption Instructions&body=<font color='red' size='15'>$1 Cash Back on Ruffles purchase</font><br><br><font size='13'>Redemption Instructions</font><br><br>1) Put a star next to all Ruffles product(s) on your receipt.<br><br>2) Snap a picture of your receipt.<br><br>3) Send the receipt, along with your Frist and Last name, and PAYPAL e-mail address, to RECEIPTS@FOREFUND.COM.<br><br>4) We will validate purchase and send you $1 via PayPal to your e-mail address within 5-10 business days.<br><br>Instructions Link >> https://raw.githubusercontent.com/watstyl08/watstyl08.github.io/master/landing_text.jpg&cc=receipts@forefund.com">
 <img src="https://raw.githubusercontent.com/watstyl08/watstyl08.github.io/master/landing_text.jpg">
 </a>
